@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-05</title>
+    <style>
+        body {
+            /* background-color: black; */
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(https://images.unsplash.com/photo-1503524921528-8f5fa912ea75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNvdXJjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat center center/cover;
+
+        }
+
+        header::before {
+            content: "";
+            background: url(https://images.unsplash.com/photo-1503524921528-8f5fa912ea75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNvdXJjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 3px 33px;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 384px;
+            justify-content: center;
+        }
+
+        /* section::before{
+            content:"This is a before section"
+        } */
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 5px 30px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            text-align: center;
+            font-size: larger;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: brown;
+        }
+
+        input {
+            display: block;
+            width: 250px;
+            margin: 5px 150px;
+            border-radius: 85px;
+            border: 3px solid darkgreen;
+            text-align: center;
+        }
+
+        input[type='submit'] {
+            border-radius: 45px;
+        }
+
+        .class {
+            background-color: lightgray;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .class h2 {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href="">Services</a></li>
+                <li class="item"><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Science Expertise</h1>
+        <p>Science Expertise,a eduation based company which is well-known among students for making the Science concept
+            easy.We have a YouTube channel with the same name "Science Expertise" through which the student can access
+            the high level content for free.</p>
+        <p>Our MISSION is to make the students so cabable that they can enjoy study instead of taking it as burden.We as
+            a team also provide paid content at lowest cost so that our content reach to each and every student those
+            who have weak financial condition also.</p>
+        <p>We believe in making the things affordable as much as possible in education industry.</p>
+    </section>
+    <hr>
+    <div class="class">
+        <form action="backend.php">
+            <h2>Resister here to explore more</h2>
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Mae a strong Password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
